@@ -27,7 +27,7 @@ const SearchPage = () => {
     const fetchData = async () => {
         if(!search) return null;
 
-        // Add API Token for higher rate limits and uncomment code below
+        // Add API Token (Line 19) for higher rate limits and uncomment code below
         // and comment ouy line 39
 
         // return await fetch(API_URL + search + SORT_URL, 
