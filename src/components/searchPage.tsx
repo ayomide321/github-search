@@ -16,7 +16,7 @@ type GithubArray = {
 const SearchPage = () => {
     const API_URL = 'https://api.github.com/search/users?q='
     const SORT_URL = '&sort=followers&order=desc'
-    const API_TOKEN = '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'
+    const API_TOKEN = 'ENTER TOKEN HERE'
     const [search, setSearch] = useState('');
     const [results, setResults] = useState<GithubArray>();
 
