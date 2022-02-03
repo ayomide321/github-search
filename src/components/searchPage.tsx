@@ -26,11 +26,17 @@ const SearchPage = () => {
 
     const fetchData = async () => {
         if(!search) return null;
-        return await fetch(API_URL + search + SORT_URL, {
-            'headers': {
-                'Authorization': `token ${API_TOKEN}`,
-            }
-        })
+
+        // Add API Token for higher rate limits and uncomment code below
+        // and comment ouy line 39
+
+        // return await fetch(API_URL + search + SORT_URL, 
+        // {
+        //     'headers': {
+        //         'Authorization': `token ${API_TOKEN}`,
+        //     }
+        // })
+        return await fetch(API_URL + search + SORT_URL)
             .then(response => response.json())
             .then(data => {
                 setResults(data);
